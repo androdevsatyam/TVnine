@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TVnine</string>
+    <string name="google_signin">Google SignIn</string>
+    <string name="facebook_signin">FaceBook Signin</string>
+    <string name="sign_out">Sign Out</string>
+
+
+    <string name="facebook_app_id">1199762750908690</string>
+    <string name="fb_login_protocol_scheme">fb1199762750908690</string>
+    <string name="facebook_client_token">56789</string>
+
+
+</resources>

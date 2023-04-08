@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1071357302433",
+    "project_id": "tvnine-8fd2a",
+    "storage_bucket": "tvnine-8fd2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071357302433:android:f5dab8591acdd60649c2e0",
+        "android_client_info": {
+          "package_name": "com.androdevsatyam.tvnine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071357302433-4osfvg0mb6hnvm62gec3kr6lcberbldb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.androdevsatyam.tvnine",
+            "certificate_hash": "d0fedd2b93f2dc365b9d3f56abe03c5591d70702"
+          }
+        },
+        {
+          "client_id": "1071357302433-247nsb5scvukm19v2s35krg0vf2vitd6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn2qMEhOZSy-Ow1NERPhbayoxMN8bSzRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071357302433-247nsb5scvukm19v2s35krg0vf2vitd6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
