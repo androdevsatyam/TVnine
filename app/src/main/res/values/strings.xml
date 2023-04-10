@@ -1,13 +1,18 @@
 <resources>
     <string name="app_name">TVnine</string>
     <string name="google_signin">Google SignIn</string>
-    <string name="facebook_signin">FaceBook Signin</string>
     <string name="sign_out">Sign Out</string>
 
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="inters_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="native_id">ca-app-pub-3940256099942544/2247696110</string>
 
+
+    <string name="facebook_signin">FaceBook Signin</string>
     <string name="facebook_app_id">1199762750908690</string>
     <string name="fb_login_protocol_scheme">fb1199762750908690</string>
     <string name="facebook_client_token">56789</string>
-
+    <string name="slider_carousel">slider_carousel</string>
+    <string name="episode_banner">episode_banner</string>
 
 </resources>

@@ -1,3 +1,4 @@
+
 buildscript {
     ext {
         kotlin_version = '1.8.20'
@@ -9,11 +10,28 @@ buildscript {
     }
     repositories {
         mavenCentral()
+//        jcenter()
+//        maven {
+//            url 'https://maven.google.com'
+//        }
     }
+
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
 plugins {
     id 'com.android.application' version '7.4.2' apply false
     id 'com.android.library' version '7.4.2' apply false
     id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
     id 'com.google.gms.google-services' version '4.3.14' apply false
 }
+
+//allprojects {
+//    repositories {
+////        jcenter()
+//        maven {
+//            url 'https://maven.google.com'
+//        }
+//        mavenCentral()
+//    }
+//}
+

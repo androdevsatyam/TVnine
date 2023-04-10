@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".screens.MainActivity">
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/googlesignin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="276dp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:layout_marginBottom="@dimen/_200sdp"
         android:backgroundTint="@android:color/darker_gray"
         android:text="@string/google_signin"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,11 +24,11 @@
         android:id="@+id/fbsign"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="92dp"
+        android:layout_marginBottom="@dimen/_80sdp"
         android:backgroundTint="@android:color/holo_blue_light"
         android:text="@string/facebook_signin"
         app:layout_constraintBottom_toTopOf="@+id/googlesignin"
         app:layout_constraintEnd_toEndOf="@+id/googlesignin"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/googlesignin"/>
+        app:layout_constraintStart_toStartOf="@+id/googlesignin" />
 </androidx.constraintlayout.widget.ConstraintLayout>
