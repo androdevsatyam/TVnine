@@ -13,12 +13,14 @@
         android:layout_marginStart="@dimen/_24sdp"
         android:layout_marginEnd="@dimen/_24sdp"
         android:layout_marginBottom="@dimen/_200sdp"
-        android:backgroundTint="@android:color/darker_gray"
+        android:backgroundTint="@android:color/holo_red_light"
         android:text="@string/google_signin"
+        app:icon="@drawable/googleg_disabled_color_18"
+        app:iconSize="@dimen/_20sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/fbsign"
@@ -27,6 +29,8 @@
         android:layout_marginBottom="@dimen/_80sdp"
         android:backgroundTint="@android:color/holo_blue_light"
         android:text="@string/facebook_signin"
+        app:icon="@drawable/com_facebook_button_icon"
+        app:iconSize="@dimen/_20sdp"
         app:layout_constraintBottom_toTopOf="@+id/googlesignin"
         app:layout_constraintEnd_toEndOf="@+id/googlesignin"
         app:layout_constraintHorizontal_bias="0.0"

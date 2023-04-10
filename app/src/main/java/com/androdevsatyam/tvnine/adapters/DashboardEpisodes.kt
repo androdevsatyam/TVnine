@@ -7,15 +7,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.androdevsatyam.tvnine.R
 import com.androdevsatyam.tvnine.model.DashEpisodesModel
+import com.androdevsatyam.tvnine.model.DashEpisodesModelItem
 import com.androdevsatyam.tvnine.screens.Details
 import com.google.gson.Gson
 
-class DashboardEpisodes(private var context: Context) :
+class DashboardEpisodes(private var context: Context, private var episodeClick:(DashEpisodesModelItem)-> Unit) :
     RecyclerView.Adapter<DashboardEpisodes.EpisodesViewHolder>() {
 
     private var episodes: DashEpisodesModel? = null
@@ -44,12 +44,8 @@ class DashboardEpisodes(private var context: Context) :
         holder.cat_eng.text=episodes!![position].category_name_english
 
         holder.row.setOnClickListener{
-            val intent=Intent(context,Details::class.java)
-            val episo=episodes!![holder.absoluteAdapterPosition]
-            val bundle=Bundle()
-            bundle.putString("episodes",Gson().toJson(episo))
-            intent.putExtra("data",bundle)
-            context.startActivity(intent)
+            val episode=episodes!![holder.absoluteAdapterPosition]
+            episodeClick(episode)
         }
     }
 
