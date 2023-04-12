@@ -4,9 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_color"
     tools:context=".screens.MainActivity">
 
-    <com.google.android.material.button.MaterialButton
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="136dp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:src="@drawable/iv_9_logo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/logo" />
+
+    <TextView
+        android:id="@+id/joinus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/join_us"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/divider"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/social"/>
+
+    <LinearLayout
+        android:id="@+id/social"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_25sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/googlesignin"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@null"
+            android:contentDescription="@string/google_sign_button"
+            android:scaleType="fitXY"
+            android:src="@drawable/googleg_standard_color_18" />
+
+        <ImageButton
+            android:id="@+id/fbsign"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@null"
+            android:contentDescription="@string/fb_login"
+            android:scaleType="fitXY"
+            android:src="@drawable/com_facebook_button_icon" />
+    </LinearLayout>
+
+
+    <!--<com.google.android.material.button.MaterialButton
         android:id="@+id/googlesignin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,4 +107,6 @@
         app:layout_constraintEnd_toEndOf="@+id/googlesignin"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/googlesignin" />
+-->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

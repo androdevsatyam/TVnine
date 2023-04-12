@@ -19,7 +19,7 @@
 
     <TextView
         android:id="@+id/episode_num"
-        style="@style/TextAppearance.AppCompat.Display1"
+        style="@style/TextAppearance.Material3.HeadlineSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="episode"
@@ -40,28 +40,28 @@
 
         <TextView
             android:id="@+id/title"
-            style="@style/TextAppearance.AppCompat.Display2"
+            style="@style/TextAppearance.Material3.HeadlineMedium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="title" />
 
         <TextView
             android:id="@+id/category"
-            style="@style/TextAppearance.AppCompat.Display1"
+            style="@style/TextAppearance.Material3.HeadlineSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="category" />
 
         <TextView
             android:id="@+id/format"
-            style="@style/TextAppearance.AppCompat.Display1"
+            style="@style/TextAppearance.Material3.HeadlineSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="format" />
 
         <TextView
             android:id="@+id/short_headline"
-            style="@style/TextAppearance.AppCompat.Display1"
+            style="@style/TextAppearance.Material3.HeadlineSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="short" />

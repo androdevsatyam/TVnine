@@ -3,39 +3,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_color"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".screens.Splash">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_192sdp"
-        android:text="TV Nine"
-        style="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="39sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/welcome"
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_36sdp"
-        android:text="Welcomes you"
-        style="@style/TextAppearance.AppCompat.Display1"
-        android:textSize="28sp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="124dp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:src="@drawable/banner"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title" />
-    
-    
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/splash_banner" />
+
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:layout_constraintTop_toBottomOf="@+id/banner"
         android:layout_marginTop="@dimen/_70sdp"
+        android:indeterminateTint="@color/white"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 

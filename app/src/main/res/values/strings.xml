@@ -17,5 +17,10 @@
     <string name="episode_banner">episode_banner</string>
     <string name="default_notification_channel_id">regular</string>
     <string name="fcm_message">Test Nine</string>
+    <string name="splash_banner">splash banner</string>
+    <string name="join_us">Join Us</string>
+    <string name="google_sign_button">google sign button</string>
+    <string name="fb_login">fb login</string>
+    <string name="logo">logo</string>
 
 </resources>

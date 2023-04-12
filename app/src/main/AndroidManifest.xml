@@ -34,8 +34,7 @@
         </activity>
         <activity
             android:name=".screens.Splash"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

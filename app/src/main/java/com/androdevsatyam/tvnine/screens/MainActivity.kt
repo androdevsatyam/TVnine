@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -45,19 +46,22 @@ class MainActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         analytics = Firebase.analytics
 
+        supportActionBar?.hide()
+
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail()
             .build()
 
+
         googleSignInClient = GoogleSignIn.getClient(this, gso)
 
-        findViewById<MaterialButton>(R.id.googlesignin).setOnClickListener {
+        findViewById<ImageButton>(R.id.googlesignin).setOnClickListener {
             val signInIntent = googleSignInClient.signInIntent
             launcher.launch(signInIntent)
         }
 
-        findViewById<MaterialButton>(R.id.fbsign).setOnClickListener {
+        findViewById<ImageButton>(R.id.fbsign).setOnClickListener {
             LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"))
         }
 
@@ -77,8 +81,6 @@ class MainActivity : AppCompatActivity() {
                     Log.d(TAG, "onError: ")
                 }
             })
-
-
     }
 
     private val launcher =

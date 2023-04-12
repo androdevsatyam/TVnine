@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import androidx.appcompat.app.AppCompatDelegate
 import com.androdevsatyam.tvnine.R
 import com.androdevsatyam.tvnine.helpers.Global
 import com.facebook.FacebookSdk
@@ -14,7 +15,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.ktx.Firebase
 
 class Splash : AppCompatActivity() {
-    val TAG = "SPLASH"
     lateinit var auth: FirebaseAuth
     lateinit var analytics: FirebaseAnalytics
     lateinit var bundle: Bundle
@@ -22,6 +22,9 @@ class Splash : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
+
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        supportActionBar?.hide()
 
         auth = FirebaseAuth.getInstance()
         analytics = Firebase.analytics
